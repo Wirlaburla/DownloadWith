@@ -1,0 +1,12 @@
+body {
+	display: flex;
+	justify-content: center;
+}
+#group > div {
+	display: flex;
+	gap: 4px;
+	margin: 4px;
+}
+#test_results, #exeinput {
+	flex-grow: 1;
+}

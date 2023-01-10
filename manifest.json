@@ -1,0 +1,38 @@
+{
+	"manifest_version": 2,
+	"name": "Download With",
+	"description": "Set an external manager for your downloads.",
+	"version": "0.0.1",
+	"applications": {
+		"gecko": {
+			"id": "downloadwith@wirlaburla.github.io",
+			"strict_min_version": "63.0"
+		}
+	},
+	"icons": {
+		"16": "images/16.png",
+		"24": "images/24.png",
+		"32": "images/32.png",
+		"48": "images/48.png",
+		"64": "images/64.png",
+		"96": "images/96.png",
+		"128": "images/128.png"
+	},
+	"background": {
+		"scripts": [
+			"common.js",
+			"background.js"
+		]
+	},
+	"permissions": [
+		"downloads",
+		"nativeMessaging",
+		"storage",
+		"tabs"
+	],
+	"options_ui": {
+		"browser_style": false,
+		"open_in_tab": true,
+		"page": "options.html"
+	}
+}
